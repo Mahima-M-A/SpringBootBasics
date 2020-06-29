@@ -1,0 +1,102 @@
+#todoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 14%;
+	padding-left: 4%;
+}
+
+.button {
+	background-color: #008CBA;
+	border: 1px solid white;
+	color: white;
+	padding: 10px 40px;
+	text-align: center;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #007AAA;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 70%;
+}
+
+.table td, .table th {
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+.table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #008CBA;
+	color: white;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 40%;
+	height: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 5px 16px;
+	background-color: #008CBA;
+	color: white;
+	font-size: 20px;
+}
+
+.modal-body {
+	padding: 5%;
+	font-size: 18px;
+}
+
+.modal-body input[type=text], select {
+	width: 100%;
+	padding: 10px 15px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
